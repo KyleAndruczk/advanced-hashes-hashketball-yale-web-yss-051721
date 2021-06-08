@@ -189,6 +189,7 @@ def player_numbers(input_team_name)
 end
 
 def player_stats(input_player_name)
+<<<<<<< HEAD
   hash = game_hash
 
   hash.each do |key, value|
@@ -224,3 +225,21 @@ def big_shoe_rebounds
   end
 end
 
+=======
+    hash = game_hash
+  
+    hash.each do |key, value|
+             
+      value.each do |inner_key, inner_value|
+       binding.pry
+        if value[:player_name] == input_player_name
+          p_stats
+        end
+      end
+    end
+  
+  
+end
+
+
+>>>>>>> df92b6ca4f6f09aa572b4dc79aba0aef329aa12c
